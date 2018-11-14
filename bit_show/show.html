@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bit Show</title>
+    <link rel="stylesheet" href="./SASS/css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <div class=" container ">
+            <nav class="navbar header-color justify-content-between ">
+                <a class="navbar-brand ">BitShow</a>
+                <div class="form-inline ">
+                    <input class="form-control mr-sm-2 " type="search " placeholder="Search " aria-label="Search ">
+                </div>
+            </nav>
+        </div>
+        <ul class="d-none list-group" id="searchUl">
+        </ul>
+    </header>
+
+    <main class="container clearfix">
+
+        <h1>Popular Shows</h1>
+        <img src="http://static.tvmaze.com/uploads/images/medium_portrait/143/359013.jpg" alt="" style="width:50%;" id="show-img">
+        <div class="season">
+            <h2>Season</h2>
+            <ul class="list-group" id="show-ul">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Morbi leo risus</li>
+                <li class="list-group-item">Porta ac consectetur ac</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+        </div>
+
+        <div class="cast">
+            <h2>Cast</h2>
+            <ul class="list-group" id="show-ul">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Morbi leo risus</li>
+                <li class="list-group-item">Porta ac consectetur ac</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+        </div>
+
+        <div class="details">
+            <h2>Show Details</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga dolor sed error vitae cumque facilis quasi ratione
+                ipsa aut, laboriosam ullam officia sapiente consequuntur vel praesentium in molestias numquam beatae.</p>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        <p class="container">Copyright &copy; Bit Student 2018</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js " integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin=" anonymous "></script>
+    <script type="module">
+        import { init } from './js/app.js';
+        $(init);
+    </script>
+
+
+</body>
+
+</html>

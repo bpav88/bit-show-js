@@ -1,0 +1,74 @@
+.clearfix:after {
+  clear: both;
+  content: "";
+  display: block; }
+
+.container {
+  display: relative; }
+
+header {
+  background-color: black; }
+
+.header-color {
+  color: white; }
+
+main {
+  padding: .5rem 1rem; }
+  main h1 {
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%; }
+  main .show-card {
+    width: 30%;
+    float: left;
+    margin: 1.5%;
+    margin-top: 3%; }
+  main .delete-margin {
+    margin-right: 0; }
+  main p {
+    padding: 4% 2% 2% 2%;
+    text-align: center;
+    font-weight: bold; }
+
+footer {
+  background-color: black;
+  margin-top: 2%; }
+  footer p {
+    text-align: center;
+    color: white;
+    padding: 1%; }
+
+#searchUl {
+  width: 10.5%;
+  float: right;
+  position: absolute;
+  top: 4.8%;
+  right: 22%;
+  z-index: 5; }
+
+#show-img {
+  float: left; }
+
+h2 {
+  margin-bottom: 5%; }
+
+.season {
+  float: left;
+  margin-left: 3%;
+  width: 45%; }
+
+.cast {
+  float: left;
+  margin-top: 3%;
+  margin-left: 3%;
+  width: 45%; }
+
+.details {
+  clear: both; }
+  .details p {
+    font-weight: 100;
+    margin: 0;
+    text-align: left;
+    padding: 0; }
+
+/*# sourceMappingURL=main.css.map */
