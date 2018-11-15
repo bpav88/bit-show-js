@@ -4,14 +4,17 @@ import * as data from './data.js';
 const $ul = $('#searchUl');
 
 
-const init = () => {
+const initIndex = () => {
     console.log('App initialized!');
     data.fetchData(onSuccess);
+}
+
+const initShow = () => {
+    console.log('App initialized!');
     const id = getLocalStorage();
     data.getSingleShow(id, onSingle);
     data.getSeasons(id, onSeason);
     data.getCast(id, onCast);
-
 }
 
 const getLocalStorage = () => localStorage.getItem('id');
@@ -72,5 +75,6 @@ function onCast(data) {
 }
 
 export {
-    init
+    initIndex,
+    initShow
 }
