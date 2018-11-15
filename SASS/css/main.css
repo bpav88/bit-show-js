@@ -1,13 +1,20 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 .clearfix:after {
   clear: both;
   content: "";
   display: block; }
 
 .container {
-  display: relative; }
+  display: relative;
+  margin-bottom: 0; }
 
 header {
   background-color: black; }
+  header .header-link {
+    color: white; }
 
 .header-color {
   color: white; }
@@ -23,6 +30,9 @@ main {
     float: left;
     margin: 1.5%;
     margin-top: 3%; }
+  main .show-card:hover {
+    box-shadow: 1px 1px 15px 1px #000000;
+    cursor: pointer; }
   main .delete-margin {
     margin-right: 0; }
   main p {
@@ -47,7 +57,8 @@ footer {
   z-index: 5; }
 
 #show-img {
-  float: left; }
+  float: left;
+  margin-bottom: 3%; }
 
 h2 {
   margin-bottom: 5%; }
@@ -70,5 +81,8 @@ h2 {
     margin: 0;
     text-align: left;
     padding: 0; }
+
+.season-span {
+  font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */

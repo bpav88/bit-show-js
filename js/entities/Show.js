@@ -1,9 +1,10 @@
-
 class Show {
-    constructor(name, image, rating) {
+    constructor(id, name, image, rating, summary) {
+        this.id = id;
         this.name = name;
         this.image = image;
         this.rating = rating;
+        this.summary = summary;
     }
 }
 
