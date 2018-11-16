@@ -6,15 +6,27 @@ const $ul = $('#searchUl');
 
 const initIndex = () => {
     console.log('App initialized!');
-    data.fetchData(onSuccess);
+    data.fetchData()
+        .then((obj) => {
+            onSuccess(obj);
+        });
 }
 
 const initShow = () => {
     console.log('App initialized!');
     const id = getLocalStorage();
-    data.getSingleShow(id, onSingle);
-    data.getSeasons(id, onSeason);
-    data.getCast(id, onCast);
+    data.getSingleShow(id)
+        .then((obj) => {
+            onSingle(obj);
+        });
+    data.getSeasons(id)
+        .then((obj) => {
+            onSeason(obj);
+        });
+    data.getCast(id)
+        .then((obj) => {
+            onCast(obj);
+        });
 }
 
 const getLocalStorage = () => localStorage.getItem('id');
@@ -35,7 +47,10 @@ $input.on('keydown', function () {
 function search() {
     $ul.removeClass('d-none');
     const searchInput = ui.collectInput();
-    data.getDataItem(searchInput, onSearch);
+    data.getDataItem(searchInput)
+        .then((obj) => {
+            onSearch(obj);
+        })
 }
 
 const onSuccess = (myShows) => {
